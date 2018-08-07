@@ -5,7 +5,7 @@ const { fft, spliceSpectrum } = require('./src/utils/fft');
 const { writeToFile } = require('./src/utils/file-writer');
 
 const decodeFiles = async (inFolder, outFolder) => {
-	console.time('read-files');
+	console.time('executing time');
 	// 1 read all file inside of in folder
 	const files = await getFilesInFolder(inFolder);
 
@@ -23,7 +23,7 @@ const decodeFiles = async (inFolder, outFolder) => {
 			console.log(`[${files[i].filePath}] processed`);
 			processed ++;
 			if (processed === files.length) {
-				console.timeEnd('read-files');
+				console.timeEnd('executing time');
 			}
 		});
 	}
