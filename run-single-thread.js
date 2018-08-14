@@ -10,8 +10,9 @@ const decodeFiles = async (inFolder, outFolder) => {
 	const files = await getFilesInFolder(inFolder);
 
   let processed = 0;
-	// 2 decode .wav to float array
+
 	for(let i=0; i < files.length; i++) {
+		// 2 decode .wav to float array
 		decode(files[i].filePath).then(audioData => {
 			// 3 get spectrum by fff
 			const wave = audioData.channelData[0];

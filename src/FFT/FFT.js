@@ -28,5 +28,4 @@ class FFTThreadWorker {
 	}
 }
 
-// const fftThreadWorker = new FFTThreadWorker();
 module.exports = { FFTThreadWorker };
