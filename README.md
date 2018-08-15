@@ -1,6 +1,5 @@
 # Js Threads
-This is app to show how to show how to use threads in node js
-
+This is app to show how to use threads in node js.
 ## Run
 
 ```
